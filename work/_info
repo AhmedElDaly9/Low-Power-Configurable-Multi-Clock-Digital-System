@@ -1,0 +1,136 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/EECE/DigitalElectronics/Diploma/System/Implementation
+vFSM_Tx
+!s110 1657094400
+!i10b 1
+!s100 VT]M_WKdIGdObM;K5:oFL0
+IOMKe=FzUF5j[3QJMVRnN`1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1657092473
+8.\FSM_Tx.v
+F.\FSM_Tx.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1657094400.000000
+!s107 .\FSM_Tx.v|
+!s90 .\FSM_Tx.v|
+!i113 1
+Z3 tCvgOpt 0
+n@f@s@m_@tx
+vMUX_4X1
+!s110 1657052716
+!i10b 1
+!s100 nF?Ak6Af7<G4oCEo>fo^i2
+I;;;z4LRb72aj3V7_g2^nJ2
+R1
+R0
+w1657052710
+8.\MUX_4X1.v
+F.\MUX_4X1.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1657052716.000000
+!s107 .\MUX_4X1.v|
+!s90 .\MUX_4X1.v|
+!i113 1
+R3
+n@m@u@x_4@x1
+vParityCalc
+!s110 1657052390
+!i10b 1
+!s100 RV0W_6gZ;BIP@iWCgJDz23
+IO^=@dO^9jk:mjm=D<[6je2
+R1
+R0
+w1657052370
+8.\ParityCalc.v
+F.\ParityCalc.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1657052390.000000
+!s107 .\ParityCalc.v|
+!s90 .\ParityCalc.v|
+!i113 1
+R3
+n@parity@calc
+vSerializer
+!s110 1657094395
+!i10b 1
+!s100 3i@7@7FoGhQzJ?Hfn7HdX2
+IL=EgGT0L:glD_gQSG7_zo0
+R1
+R0
+w1657094383
+8.\Serializer.v
+F.\Serializer.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1657094395.000000
+!s107 .\Serializer.v|
+!s90 .\Serializer.v|
+!i113 1
+R3
+n@serializer
+vUART_Tx
+!s110 1657094397
+!i10b 1
+!s100 H<]4=5M8GJ_UURgG<FILL3
+IgEDbM0m^SAJ_>5>7fN^b21
+R1
+R0
+w1657094305
+8.\UART_Tx.v
+F.\UART_Tx.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1657094397.000000
+!s107 .\UART_Tx.v|
+!s90 .\UART_Tx.v|
+!i113 1
+R3
+n@u@a@r@t_@tx
+vUART_Tx_tb
+!s110 1657097652
+!i10b 1
+!s100 >oD8>N99X?N0Wj68T2a`l2
+I`OS2MK3jDo3VVOjaUj::M1
+R1
+R0
+w1657097641
+8.\UART_Tx_tb.v
+F.\UART_Tx_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1657097652.000000
+!s107 .\UART_Tx_tb.v|
+!s90 .\UART_Tx_tb.v|
+!i113 1
+R3
+n@u@a@r@t_@tx_tb

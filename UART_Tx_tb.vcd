@@ -1,0 +1,447 @@
+$date
+	Wed Jul 06 10:54:40 2022
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	100ps
+$end
+
+$scope module UART_Tx_tb $end
+$var parameter 32 ! CLK_PERIOD $end
+$var reg 8 " P_DATA_tb [7:0] $end
+$var reg 1 # PAR_EN_tb $end
+$var reg 1 $ Data_valid_tb $end
+$var reg 1 % rst_tb $end
+$var reg 1 & CLK_tb $end
+$var reg 1 ' PAR_TYP_tb $end
+$var wire 1 ( TX_OUT_tb $end
+$var wire 1 ) busy_tb $end
+
+$scope module DUT $end
+$var parameter 1 * start_bit $end
+$var parameter 1 + stop_bit $end
+$var wire 1 , P_DATA [7] $end
+$var wire 1 - P_DATA [6] $end
+$var wire 1 . P_DATA [5] $end
+$var wire 1 / P_DATA [4] $end
+$var wire 1 0 P_DATA [3] $end
+$var wire 1 1 P_DATA [2] $end
+$var wire 1 2 P_DATA [1] $end
+$var wire 1 3 P_DATA [0] $end
+$var wire 1 4 PAR_EN $end
+$var wire 1 5 Data_valid $end
+$var wire 1 6 rst $end
+$var wire 1 7 CLK $end
+$var wire 1 8 PAR_TYP $end
+$var wire 1 ( TX_OUT $end
+$var wire 1 ) busy $end
+$var wire 1 9 ser_data $end
+$var wire 1 : ser_en $end
+$var wire 1 ; ser_done $end
+$var wire 1 < mux_sel [1] $end
+$var wire 1 = mux_sel [0] $end
+$var wire 1 > par_bit $end
+
+$scope module SerializerTX $end
+$var wire 1 , P_DATA [7] $end
+$var wire 1 - P_DATA [6] $end
+$var wire 1 . P_DATA [5] $end
+$var wire 1 / P_DATA [4] $end
+$var wire 1 0 P_DATA [3] $end
+$var wire 1 1 P_DATA [2] $end
+$var wire 1 2 P_DATA [1] $end
+$var wire 1 3 P_DATA [0] $end
+$var wire 1 : ser_en $end
+$var wire 1 6 rst $end
+$var wire 1 7 CLK $end
+$var wire 1 9 ser_data $end
+$var reg 1 ? ser_done $end
+$var reg 4 @ counter [3:0] $end
+$var reg 8 A data [7:0] $end
+$upscope $end
+
+$scope module FSMTX $end
+$var parameter 2 B start_bit_sel $end
+$var parameter 2 C stop_bit_sel $end
+$var parameter 2 D ser_data_sel $end
+$var parameter 2 E par_bit_sel $end
+$var parameter 3 F IDLE $end
+$var parameter 3 G S0 $end
+$var parameter 3 H S1 $end
+$var parameter 3 I S2 $end
+$var parameter 3 J S3 $end
+$var wire 1 5 Data_valid $end
+$var wire 1 4 PAR_EN $end
+$var wire 1 ; ser_done $end
+$var wire 1 6 rst $end
+$var wire 1 7 CLK $end
+$var reg 2 K mux_sel [1:0] $end
+$var reg 1 L ser_en $end
+$var reg 1 M busy $end
+$var reg 3 N current_state [2:0] $end
+$var reg 3 O next_state [2:0] $end
+$upscope $end
+
+$scope module ParCalcTX $end
+$var wire 1 , P_DATA [7] $end
+$var wire 1 - P_DATA [6] $end
+$var wire 1 . P_DATA [5] $end
+$var wire 1 / P_DATA [4] $end
+$var wire 1 0 P_DATA [3] $end
+$var wire 1 1 P_DATA [2] $end
+$var wire 1 2 P_DATA [1] $end
+$var wire 1 3 P_DATA [0] $end
+$var wire 1 8 PAR_TYP $end
+$var wire 1 > par_bit $end
+$upscope $end
+
+$scope module MUX_TX $end
+$var wire 1 < Sel [1] $end
+$var wire 1 = Sel [0] $end
+$var wire 1 P In0 $end
+$var wire 1 Q In1 $end
+$var wire 1 9 In2 $end
+$var wire 1 > In3 $end
+$var reg 1 R MUX_OUT $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx "
+x#
+0$
+1%
+0&
+x'
+x?
+bx @
+bx A
+bx K
+xL
+xM
+bx N
+b0 O
+0R
+b101 !
+b0 *
+b1 +
+b0 B
+b1 C
+b10 D
+b11 E
+b0 F
+b1 G
+b10 H
+b11 I
+b100 J
+0(
+x)
+x9
+x:
+x;
+x=
+x<
+x>
+x8
+07
+16
+05
+x4
+x3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+1Q
+0P
+$end
+#10
+0%
+06
+b0 @
+b0 A
+b0 N
+09
+b1 K
+0L
+0M
+0:
+0)
+1=
+0<
+1R
+1(
+#25
+1&
+17
+#35
+1%
+16
+#50
+0&
+07
+#75
+1&
+17
+#85
+b11010101 "
+0#
+1$
+13
+02
+11
+00
+1/
+0.
+1-
+1,
+04
+15
+b1 O
+#100
+0&
+07
+#125
+1&
+17
+b1 N
+b10 O
+b0 K
+1L
+1M
+1:
+1)
+0=
+0R
+0(
+#150
+0&
+07
+#175
+1&
+17
+b11010101 A
+0?
+b1 @
+b10 N
+19
+0;
+b10 K
+1<
+1R
+1(
+#200
+0&
+07
+#225
+1&
+17
+b1101010 A
+b10 @
+09
+0R
+0(
+#250
+0&
+07
+#275
+1&
+17
+b110101 A
+b11 @
+19
+1R
+1(
+#300
+0&
+07
+#325
+1&
+17
+b11010 A
+b100 @
+09
+0R
+0(
+#350
+0&
+07
+#375
+1&
+17
+b1101 A
+b101 @
+19
+1R
+1(
+#400
+0&
+07
+#425
+1&
+17
+b110 A
+b110 @
+09
+0R
+0(
+#450
+0&
+07
+#475
+1&
+17
+b11 A
+b111 @
+19
+1R
+1(
+#500
+0&
+07
+#525
+1&
+17
+b1 A
+b1000 @
+1?
+1;
+b100 O
+#550
+0&
+07
+#575
+1&
+17
+b0 @
+0?
+b100 N
+0;
+b1 O
+b1 K
+0L
+0:
+1=
+0<
+#585
+b1 "
+1#
+0'
+01
+0/
+0-
+0,
+08
+14
+1>
+#600
+0&
+07
+#625
+1&
+17
+b1 N
+b10 O
+b0 K
+1L
+1:
+0=
+0R
+0(
+#650
+0&
+07
+#675
+1&
+17
+b1 @
+b10 N
+b10 K
+1<
+1R
+1(
+#700
+0&
+07
+#725
+1&
+17
+b0 A
+b10 @
+09
+0R
+0(
+#750
+0&
+07
+#775
+1&
+17
+b11 @
+#800
+0&
+07
+#825
+1&
+17
+b100 @
+#850
+0&
+07
+#875
+1&
+17
+b101 @
+#900
+0&
+07
+#925
+1&
+17
+b110 @
+#950
+0&
+07
+#975
+1&
+17
+b111 @
+#1000
+0&
+07
+#1025
+1&
+17
+b1000 @
+1?
+1;
+b11 O
+#1035
+0$
+05
+#1050
+0&
+07
+#1075
+1&
+17
+b0 @
+0?
+b11 N
+0;
+b100 O
+b11 K
+0L
+0:
+1=
+1R
+1(
+#1100
+0&
