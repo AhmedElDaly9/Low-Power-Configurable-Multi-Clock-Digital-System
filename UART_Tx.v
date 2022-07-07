@@ -32,7 +32,7 @@ wire            par_bit     ;
     input   wire            CLK         ,
 
     output  wire            ser_data    ,
-    output  reg             ser_done     
+    output  wire            ser_done     
 */
 Serializer SerializerTX
 (

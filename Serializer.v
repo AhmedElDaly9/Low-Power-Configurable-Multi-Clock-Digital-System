@@ -6,7 +6,7 @@ module Serializer
     input   wire            CLK         ,
 
     output  wire            ser_data    ,
-    output  reg             ser_done     
+    output  wire            ser_done     
 );
 
 reg     [3:0]   counter     ;
@@ -24,34 +24,21 @@ always @(posedge CLK, negedge rst)
                 if (counter == 4'b0000)
                     begin
                         data        <= P_DATA           ;
-                        ser_done    <= 1'b0             ;
                         counter     <= counter + 4'b1   ;
-                    end
-                else if (counter[2:0] == 3'b111) // the last count
-                    begin
-                        data        <= data >> 4'b1     ;
-                        counter     <= counter + 4'b1   ;
-                        ser_done    <= 1'b1             ;
                     end
                 else if (counter[3] == 1'b0 ) // counter is less than 8
                     begin
                         data        <= data >> 4'b1     ;
                         counter     <= counter + 4'b1   ;
-                        ser_done    <= 1'b0             ;
-                    end
-                else if (counter[3] == 1'b1 ) // finished counting
-                    begin
-                        counter     <= 4'b0000          ;
-                        ser_done    <= 1'b0             ;
                     end
                 else
                     begin
                         counter     <= 4'b0000          ;
-                        ser_done    <= 1'b0             ;
                     end
                 end  
     end
 
-assign ser_data = data [0]    ;
+assign  ser_done = counter[3]   ;
+assign  ser_data = data [0]     ;
     
 endmodule

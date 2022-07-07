@@ -72,13 +72,13 @@ r1
 R3
 n@parity@calc
 vSerializer
-!s110 1657094395
+!s110 1657185637
 !i10b 1
-!s100 3i@7@7FoGhQzJ?Hfn7HdX2
-IL=EgGT0L:glD_gQSG7_zo0
+!s100 [7cLzCaP]WY;Y]fOH68Yc3
+If=fR@3LdP@gA^_A_9:E[T2
 R1
-R0
-w1657094383
+Z4 dE:/EECE/DigitalElectronics/Diploma/System/Implementation/Low Power Configurable Multi Clock Digital System
+w1657185596
 8.\Serializer.v
 F.\Serializer.v
 L0 1
@@ -86,20 +86,20 @@ R2
 r1
 !s85 0
 31
-!s108 1657094395.000000
+!s108 1657185637.000000
 !s107 .\Serializer.v|
 !s90 .\Serializer.v|
 !i113 1
 R3
 n@serializer
 vUART_Tx
-!s110 1657094397
+!s110 1657184819
 !i10b 1
 !s100 H<]4=5M8GJ_UURgG<FILL3
 IgEDbM0m^SAJ_>5>7fN^b21
 R1
-R0
-w1657094305
+R4
+w1657184774
 8.\UART_Tx.v
 F.\UART_Tx.v
 L0 1
@@ -107,19 +107,19 @@ R2
 r1
 !s85 0
 31
-!s108 1657094397.000000
+!s108 1657184819.000000
 !s107 .\UART_Tx.v|
 !s90 .\UART_Tx.v|
 !i113 1
 R3
 n@u@a@r@t_@tx
 vUART_Tx_tb
-!s110 1657097652
+!s110 1657184813
 !i10b 1
 !s100 >oD8>N99X?N0Wj68T2a`l2
 I`OS2MK3jDo3VVOjaUj::M1
 R1
-R0
+R4
 w1657097641
 8.\UART_Tx_tb.v
 F.\UART_Tx_tb.v
@@ -128,7 +128,7 @@ R2
 r1
 !s85 0
 31
-!s108 1657097652.000000
+!s108 1657184813.000000
 !s107 .\UART_Tx_tb.v|
 !s90 .\UART_Tx_tb.v|
 !i113 1
